@@ -9,7 +9,7 @@ def initialize_reddit_bot():
         reddit = praw.Reddit(
             client_id=os.environ.get("REDDIT_CLIENT_ID"),
             client_secret=os.environ.get("REDDIT_CLIENT_SECRET"),
-            user_agent="MyFirstRedditBot v0.1 by u/bisbisness88 (Learning Project)",
+            user_agent="MyFirstRedditBot v0.1 by u/BeBeSan11 (Learning Project)",
         )
         print("Reddit instance initialized successfully.")
         return reddit
