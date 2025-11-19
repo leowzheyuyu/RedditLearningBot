@@ -2,11 +2,6 @@
 import praw
 import os
 
-# --- Placeholder for Your Configuration ---
-# NOTE: The client_id, client_secret, and refresh_token should be stored
-# in environment variables or a separate, secured configuration file (like .env),
-# NOT directly in this script.
-
 # --- Bot Initialization ---
 def initialize_reddit_bot():
     """Initializes the PRAW Reddit instance."""
@@ -30,14 +25,12 @@ def run_bot():
     if not reddit:
         return
 
-    # Replace with your actual testing subreddit name
+    # Replace with actual testing subreddit name
     TEST_SUBREDDIT = "MyTestBotLab" 
     
-    # Example logic: Fetching and printing top posts
     print(f"Fetching top 5 posts from r/{TEST_SUBREDDIT}...")
     
     # This section is currently commented out to prevent execution errors
-    # while the script is being set up.
     """
     try:
         subreddit = reddit.subreddit(TEST_SUBREDDIT)
